@@ -8,7 +8,6 @@ DB_PASSWORD = "你的密碼"
 DB_NAME = "delivery_db"
 
 URL = f"mysql+pymysql://root:{DB_PASSWORD}@localhost/{DB_NAME}"
-#URL = "mysql+pymysql://root:malay727@127.0.0.1:3306/delivery_db"
 
 engine = create_engine(URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
